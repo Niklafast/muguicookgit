@@ -1,0 +1,131 @@
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+.paddingTB{padding: 50px 0;}
+.bgFooter{background: linear-gradient(to top, purple, white);}
+.txt{
+	text-align: center;
+}
+.navBar{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+a{
+  color: black;
+}
+.encabezado{
+  grid-area: encabezado;
+  text-align: center;
+  font-family: cursive; 
+  }
+.borderRadius{
+  border-radius: 5%;
+}
+.imgHover{
+  transition: all 10s;
+}  
+.imgHover:hover{
+  transform: translateY(20px);
+}
+
+@keyframes moverLogo {
+  0%{width: 150px;transform: translate(50px,70px);}
+  50%{width: 600px;transform: rotate(90deg);}
+  100%{width: 200px;transform: translateY(100px);}
+}
+.animacion{
+  width: 350px;
+  height: 400px;
+  animation-name: moverLogo;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+}
+/*css galeria*/
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+@media only screen  and (max-width: 768px){
+	.noMobile{
+		display: none;
+	}
+}
+/*css menu*/
+.gridContainerMenu{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 20px;
+}
+.parallax1{
+    background-image: url(../assets/fotos/MUGUI_Nosotros.jpg);
+  height: 500px;
+  background-attachment: fixed; /*create parralax scrolling effect*/
+    background-position: center;
+    background-repeat: no repeat;
+    background-attachment: auto;
+}
+/*css nuestra historia*/
+.moverVideo{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.txtCen{font-size: 120%;
+font-family: cursive;
+text-align: center;
+font-weight: bolder;
+word-spacing: 20px;
+margin-top: 50px;
+margin-right: 80px;
+margin-left: 50px;
+margin-bottom: 50px;
+}
+.lista {list-style-type: none;}
+/*css para contacto*/
+.parallax2{
+    background-image: url(../assets/fotos/MUGI_Textura05PX.jpg);
+  height: 400px;
+  background-attachment: fixed; /*create parralax scrolling effect*/
+    background-position: center;
+    background-repeat: no repeat;
+    background-attachment: auto;
+}
+.mapFlex{
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
