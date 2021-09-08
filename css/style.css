@@ -117,7 +117,7 @@ margin-bottom: 50px;
 .lista {list-style-type: none;}
 /*css para contacto*/
 .parallax2{
-    background-image: url(../assets/fotos/MUGI_Textura05PX.jpg);
+    background-image: url(../assets/fotos/MUGI_Textura05px.jpg);
   height: 400px;
   background-attachment: fixed; /*create parralax scrolling effect*/
     background-position: center;
